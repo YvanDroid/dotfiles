@@ -1,0 +1,42 @@
+{
+  "dark": {
+    "name": "Matugen Dark",
+    "primary": "{{colors.primary.dark.hex}}",
+    "primaryText": "{{colors.on_primary.dark.hex}}",
+    "primaryContainer": "{{colors.primary_container.dark.hex}}",
+    "secondary": "{{colors.secondary.dark.hex}}",
+    "surface": "{{colors.surface.dark.hex}}",
+    "surfaceText": "{{colors.on_surface.dark.hex}}",
+    "surfaceVariant": "{{colors.surface_variant.dark.hex}}",
+    "surfaceVariantText": "{{colors.on_surface_variant.dark.hex}}",
+    "surfaceTint": "{{colors.surface_tint.dark.hex}}",
+    "background": "{{colors.background.dark.hex}}",
+    "backgroundText": "{{colors.on_background.dark.hex}}",
+    "outline": "{{colors.outline.dark.hex}}",
+    "surfaceContainer": "{{colors.surface_container.dark.hex}}",
+    "surfaceContainerHigh": "{{colors.surface_container_high.dark.hex}}",
+    "error": "{{colors.error.dark.hex}}",
+    "warning": "{{colors.tertiary.dark.hex}}",
+    "info": "{{colors.primary.dark.hex}}"
+  },
+  "light": {
+    "name": "Matugen Light",
+    "primary": "{{colors.primary.light.hex}}",
+    "primaryText": "{{colors.on_primary.light.hex}}",
+    "primaryContainer": "{{colors.primary_container.light.hex}}",
+    "secondary": "{{colors.secondary.light.hex}}",
+    "surface": "{{colors.surface.light.hex}}",
+    "surfaceText": "{{colors.on_surface.light.hex}}",
+    "surfaceVariant": "{{colors.surface_variant.light.hex}}",
+    "surfaceVariantText": "{{colors.on_surface_variant.light.hex}}",
+    "surfaceTint": "{{colors.surface_tint.light.hex}}",
+    "background": "{{colors.background.light.hex}}",
+    "backgroundText": "{{colors.on_background.light.hex}}",
+    "outline": "{{colors.outline.light.hex}}",
+    "surfaceContainer": "{{colors.surface_container.light.hex}}",
+    "surfaceContainerHigh": "{{colors.surface_container_high.light.hex}}",
+    "error": "{{colors.error.light.hex}}",
+    "warning": "{{colors.tertiary.light.hex}}",
+    "info": "{{colors.primary.light.hex}}"
+  }
+}

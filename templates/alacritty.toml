@@ -1,0 +1,44 @@
+# 0x Default colors
+
+# Using dank-theme as a base for an alacritty template
+
+[colors.primary]
+
+background = '{{colors.surface.default.hex}}' #Color0 / background
+foreground = '{{colors.on_surface.default.hex}}' #foreground
+
+
+# 0x Colors the cursor will use if `custom_cursor_colors` is true
+
+[colors.cursor]
+
+text = '{{colors.on_surface.default.hex}}' #foreground
+cursor = '{{colors.secondary_fixed_dim.default.hex}}' #selection_background
+
+
+# 0x Normal colors
+
+[colors.normal]
+
+black   = "#1a1110" #background / color0
+red     = "#d65555" #color1
+green   = "#488f47" #color2
+yellow  = "#a17b58" #color3
+blue    = "#cc5951" #color4
+magenta = "#bf928c" #color5
+cyan    = '{{colors.primary.default.hex}}' #color6 / url_color
+white   = "#abb2bf" #color7
+
+
+# 0x Bright colors
+
+[colors.bright]
+
+black   = "#5c6370" #color8
+red     = "#e57e7e" #color9
+green   = "#68ac67" #color10
+yellow  = "#b89677" #color11
+blue    = "#ffa59a" #color12
+magenta = "#a4414c" #color13
+cyan    = "#8f5547" #color14
+white   = '{{colors.on_surface.default.hex}}' #foreground

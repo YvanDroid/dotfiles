@@ -1,0 +1,38 @@
+window#osd {
+    border-radius: 5px;
+    border: none;
+/*     background: #{"alpha(@theme_bg_color, 0.8)"}; */
+    background: {{colors.surface_container_high.default.hex}};
+    #container {
+    margin: 16px;
+    }
+
+    image,
+    label {
+        color: {{colors.primary.default.hex}};
+    }
+
+    progressbar:disabled,
+    image:disabled {
+        opacity: 1;
+    }
+
+    progressbar {
+        min-height: 6px;
+        border-radius: 999px;
+        background: transparent;
+        border: none;
+    }
+    trough {
+        min-height: inherit;
+        border-radius: inherit;
+        border: none;
+        background: {{colors.primary.default.hex}}};
+    }
+    progress {
+        min-height: inherit;
+        border-radius: inherit;
+        border: none;
+        background: {{colors.primary.default.hex}};
+    }
+}

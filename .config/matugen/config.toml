@@ -1,0 +1,30 @@
+[config.wallpaper]
+command = "swww"
+arguments = ["img", "--transition-type", "simple"]
+set = true
+
+[templates.swayosd]
+pre_hook = 'pkill swayosd-server'
+input_path = '~/templates/style.css'
+output_path = '~/.config/swayosd/style.css'
+post_hook = 'swayosd-server </dev/null &>/dev/null &'
+
+[templates.fuzzel]
+input_path = '~/templates/fuzzel.ini'
+output_path = '~/.config/fuzzel/colors.ini'
+
+[templates.dankmaterialshell]
+input_path = '~/templates/dms.json'
+output_path = '~/.config/DankMaterialShell/matugen.json'
+
+[templates.niri]
+input_path = '~/templates/config.kdl'
+output_path = '~/.config/niri/config.kdl'
+
+[templates.alacritty]
+input_path = '~/templates/alacritty.toml'
+output_path = '~/.config/alacritty/colors.toml'
+
+[templates.vesktop]
+input_path = '~/templates/midnight-discord.css'
+output_path = '~/.config/vesktop/themes/midnight-discord.css'

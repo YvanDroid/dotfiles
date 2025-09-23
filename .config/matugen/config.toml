@@ -1,7 +1,11 @@
 [config.wallpaper]
 command = "swww"
-arguments = ["img", "--transition-type", "simple"]
+arguments = ["img", "--transition-type", "fade"]
 set = true
+
+[config.custom_keywords]
+corner_size = "10"
+border_size = "2"
 
 [templates.swayosd]
 pre_hook = 'pkill swayosd-server'
@@ -13,9 +17,13 @@ post_hook = 'swayosd-server </dev/null &>/dev/null &'
 input_path = '~/templates/fuzzel.ini'
 output_path = '~/.config/fuzzel/colors.ini'
 
-[templates.dankmaterialshell]
+[templates.dankmaterialshell-theme]
 input_path = '~/templates/dms.json'
 output_path = '~/.config/DankMaterialShell/matugen.json'
+
+[templates.dankmaterialshell-settings]
+input_path = '~/templates/dms-settings.json'
+output_path = '~/.config/DankMaterialShell/settings.json'
 
 [templates.niri]
 input_path = '~/templates/config.kdl'
@@ -28,3 +36,12 @@ output_path = '~/.config/alacritty/colors.toml'
 [templates.vesktop]
 input_path = '~/templates/midnight-discord.css'
 output_path = '~/.config/vesktop/themes/midnight-discord.css'
+
+[templates.obsidian]
+input_path = '~/templates/obsidian.css'
+output_path = '~/Obsidian/Barracks/.obsidian/themes/Matugen/theme.css'
+
+[templates.cava]
+input_path = '~/templates/cava'
+output_path = '~/.config/cava/config'
+post_hook = 'pkill -USR1 cava'

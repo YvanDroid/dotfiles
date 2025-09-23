@@ -1,5 +1,5 @@
 window#osd {
-    border-radius: 5px;
+    border-radius: {{custom.corner_size}}px;
     border: none;
 /*     background: #{"alpha(@theme_bg_color, 0.8)"}; */
     background: {{colors.surface_container_high.default.hex}};

@@ -83,6 +83,7 @@ input {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
 // Remember to uncomment the node by removing "/-"!
 output "DP-2" {
+    variable-refresh-rate on-demand=true
     // Uncomment this line to disable this output.
     // off
     // PanaScope Pixio PX277P
@@ -128,7 +129,7 @@ output "HDMI-A-1" {
 layout {
     background-color "transparent"
     // Set gaps around windows in logical pixels.
-    gaps 2
+    gaps {{custom.border_size}}
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -176,7 +177,7 @@ layout {
         // off
 
         // How many logical pixels the ring extends out from the windows.
-        width 2
+        width {{custom.border_size}}
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
@@ -214,7 +215,7 @@ layout {
         // If you enable the border, you probably want to disable the focus ring.
         off
 
-        width 2
+        width {{custom.border_size}}
         active-color "{{colors.primary.default.hex}}"
         inactive-color "{{colors.outline.default.hex}}"
 
@@ -433,7 +434,7 @@ window-rule {
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
 window-rule {
-    geometry-corner-radius 5
+    geometry-corner-radius {{custom.corner_size}}
     clip-to-geometry true
 }
 
@@ -447,6 +448,12 @@ window-rule {
 // -------------------------------
 // Steam
 //spawn-at-startup "steam -silent" - not needed, steam already starts
+
+// Cava visualiser. Should launch on the bottom screen
+spawn-sh-at-startup "kitten panel --layer=background --edge=top --margin-left 960 --margin-top 540 -o background_opacity=0.0 -o window_padding_width=0 cava"
+
+// swww - For that nice wallpaper transition
+spawn-at-startup "swww-daemon"
 
 // Replacing the DankMaterialShell OSD (since it doesn't work with Pro Audio)
 spawn-at-startup "swayosd-server"

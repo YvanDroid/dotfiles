@@ -469,14 +469,21 @@ window-rule {
     match title="HELLDIVERS™ 2$"
     open-fullscreen true
 }
+
+// Discord Modifications
+window-rule {
+    match app-id=r#"vesktop"#
+    default-column-width {proportion 0.66667 ;}
+}
+
 // -------------------------------
 //        Startup Apps
 // -------------------------------
 // Steam
 //spawn-at-startup "steam -silent" - not needed, steam already starts
 
-// Cava visualiser. Should launch on the bottom screen
-spawn-sh-at-startup "kitten panel --layer=background --edge=top --margin-left 960 --margin-top 540 -o background_opacity=0.0 -o window_padding_width=0 cava"
+// Cava visualiser. Should launch on the bottom screen. Try using window rules for it
+spawn-sh-at-startup "kitten panel --layer=background --edge=top --margin-left 960 --margin-top 540 -o background_opacity=0.0 -o window_padding_width=0 --output-name HDMI-A-1 cava"
 
 // swww - For that nice wallpaper transition
 spawn-at-startup "swww-daemon"
@@ -510,6 +517,9 @@ spawn-at-startup "qs" "-c" "dms"
 
 
 binds {
+    // Spawn testing modifier
+    // Mod+N { spawn-sh  "kitten panel --layer=background --edge=top --margin-left 960 --margin-top 540 -o background_opacity=0.0 -o window_padding_width=0 cava";}
+
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
     // in the end. To find an XKB name for a particular key, you may use a program
     // like wev.

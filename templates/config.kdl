@@ -483,7 +483,7 @@ window-rule {
 //spawn-at-startup "steam -silent" - not needed, steam already starts
 
 // Cava visualiser. Should launch on the bottom screen. Try using window rules for it
-spawn-sh-at-startup "kitten panel --layer=background --edge=top --margin-left 960 --margin-top 540 -o background_opacity=0.0 -o window_padding_width=0 --output-name HDMI-A-1 cava"
+spawn-sh-at-startup "kitten panel --layer=background --edge=right --margin-left 1440 --margin-bottom 0 --margin-top 50 -o background_opacity=0.0 -o window_padding_width=0 --output-name HDMI-A-1 cava"
 
 // swww - For that nice wallpaper transition
 spawn-at-startup "swww-daemon"

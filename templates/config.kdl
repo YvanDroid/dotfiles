@@ -300,6 +300,19 @@ cursor {
     hide-after-inactive-ms 1000
 }
 
+overview {
+    zoom 0.7
+    backdrop-color "{{colors.surface.default.hex}}"
+
+    workspace-shadow {
+        //off
+        softness 40
+        spread 10
+        offset x=0 y=10
+        color "{{colors.shadow.default.hex}}"
+    }
+}
+
 // Add lines like this to spawn processes at startup.
 // Note that running niri as a session supports xdg-desktop-autostart,
 // which may be more convenient to use.

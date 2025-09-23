@@ -287,6 +287,19 @@ layout {
     }
 }
 
+cursor {
+    // Looks in the following folders:
+    // /usr/share/icons/ - default and system-wide packages
+    // ~/.local/share/icons - installed themes
+    // ~/.icons - downloaded from KDE store
+    // Must use the folder name
+    xcursor-theme "Posy_Cursor"
+    xcursor-size 32
+
+    hide-when-typing
+    hide-after-inactive-ms 1000
+}
+
 // Add lines like this to spawn processes at startup.
 // Note that running niri as a session supports xdg-desktop-autostart,
 // which may be more convenient to use.
@@ -299,7 +312,7 @@ spawn-at-startup "xwayland-satellite"
 // Environment variables
 environment {
     // Setting up Xwayland-servers
-    // DISPLAY ":1" - not needed for 25.08-1
+    // DISPLAY ":1" - not needed past 25.08-1
 
     // For electron apps
     ELECTRON_OZONE_PLATFORM_HINT "auto"
